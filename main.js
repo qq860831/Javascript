@@ -59,3 +59,80 @@ function mul(a,b){
     console.log("數字相乘的結果:"+(a*b));
 }
 mul(99,7);
+
+//物件 {物件資料名稱:物件資料庫}
+var car={
+    brand:"BMW",
+    cc:2000,
+    color:"gold",
+    drive:function() {
+        console.log("開車中...");
+    }
+}
+
+console.log("汽車的牌子:"+car.brand);
+
+car.drive();
+
+// 練習事件
+var box2= document.getElementById("box2");
+box2.onclick= ()=> {
+    console.log("點擊");
+}
+
+box2.onmouseenter= ()=> {
+    console.log("滑入");
+}
+
+box2.onmouseleave= ()=> {
+    console.log("滑出");
+}
+
+// 陣列 Array
+
+var numberA=10;
+var numberB=100;
+var numberC=30;
+
+var numberObject={
+    A:10,
+    B:100,
+    C:30
+}
+
+// 陣列資料
+var numbers=[10,100,30,4];
+console.log("陣列第三筆資料:"+numbers[2]);
+numbers[0]=999;
+console.log("陣列第一筆資料:"+numbers[0]);
+console.log("陣列的數量:"+numbers.length);
+
+// 比較運算子 > < >= <= == !=
+var testA=100;
+var testB=50;
+console.log(testA !=testB);
+
+// == ===差異
+var testC=7;
+var testD="7";
+
+console.log("==的結果:"+(testC==testD));  //比較值
+console.log("===的結果:"+(testC===testD)); //比較值與類型
+
+var testE= true;
+console.log("顛倒:"+!testE);
+
+//並且&&
+//只要有一個false結果就是false
+console.log(true&&true);  //t
+console.log(true&&false);  //f
+console.log(false&&true);  //f
+console.log(false&&false);  //f
+
+//或者
+// 只要有一個true結果就是true
+console.log(true||true);  //t
+console.log(true||false);  //t
+console.log(false||true);  //t
+console.log(false||false);  //f
+
