@@ -136,3 +136,42 @@ console.log(true||false);  //t
 console.log(false||true);  //t
 console.log(false||false);  //f
 
+// 判斷式
+// 語法Syntax
+// if(布林值) {當布林值為true會執行}
+if(true){
+   console.log("我是判斷式~"); 
+}
+
+// else 否則
+// if(布林值) {當布林值為true會執行}
+// else{當布林值為false會執行}
+
+var boolTest = true;
+
+if (boolTest) {
+    console.log("布林值為true")
+} else {
+    console.log("布林值為false")
+}
+
+// 如果 分數>=60 :及格
+// 如果 分數>=40 :補考
+// 如果 分數 :被當
+var score=document.getElementById("score");
+var result=document.getElementById("result");
+
+score.onchange=()=> {
+    var s =parseInt(score.value);
+
+    if(s>=60){
+        result.innerText="分數:"+s+"-及格";
+    }
+    else if(s>=40){
+        result.innerText="分數:"+s+"-補考";
+    }
+    else{
+        result.innerText="分數:"+s+"-被當";
+    }
+}
+// if一定要放第一個；else則要放最後一個；else if則可以在中間放無限多個
