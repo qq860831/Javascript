@@ -162,7 +162,7 @@ var score=document.getElementById("score");
 var result=document.getElementById("result");
 
 score.onchange=()=> {
-    var s =parseInt(score.value);
+    var s =parseInt(score.value); //parseInt取整數
 
     if(s>=60){
         result.innerText="分數:"+s+"-及格";
@@ -175,3 +175,30 @@ score.onchange=()=> {
     }
 }
 // if一定要放第一個；else則要放最後一個；else if則可以在中間放無限多個
+
+
+// 迴圈 for
+// for(初始值； 條件-布林值； 迭代器-迴圈結束會執行的區塊){}
+
+// 初始值:迴圈開始的值
+// 條件:迴圈會執行的條件-當條件為true執行，false結束迴圈
+// 迭代器:初始值處理-遞增++
+for (let i = 0; i < 50; i++) {
+    console.log("迴圈:"+i);   
+}
+
+// 陣列
+var products=["冰美式" ,"冰紅茶", "冰奶茶"];
+// products.length 陣列.長度(數量) 3
+
+for(let i=0;i<products.length;i++){
+    console.log(products[i]);
+}
+// getElementsByClassName: 透過類別取得複數元素 - 結果為陣列
+var ps =document.getElementsByClassName("product");
+
+console.log(ps);
+
+for (let i = 0; i < ps.length; i++) {
+    ps[i].innerText=products[i];
+}
