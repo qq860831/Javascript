@@ -229,9 +229,12 @@ var countB=99;
 }
 console.log(countB);
 
+// var會把區塊內的值優先
+
 let countC=99;
 
 {
     let countC=77;
 }
 console.log(countC);
+// let則會被區塊外以下的值寫掉
