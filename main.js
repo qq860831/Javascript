@@ -202,3 +202,36 @@ console.log(ps);
 for (let i = 0; i < ps.length; i++) {
     ps[i].innerText=products[i];
 }
+
+// 常數 const constant
+// 不能變更
+const pi=3.14159;
+
+// pi=4.123546;
+// pi=pi+10;
+
+// let&var的差異
+// let在同樣的區塊內不能重複-安全
+// let只在區塊內有效  ex:{console.log(countA)}
+var countA=10;
+var countA=7;
+// let countA=5; //重複瀏覽器顯示錯誤
+{
+    let countA=5;
+    console.log(countA);
+}
+console.log(countA);
+
+var countB=99;
+
+{
+    var countB=77;
+}
+console.log(countB);
+
+let countC=99;
+
+{
+    let countC=77;
+}
+console.log(countC);
